@@ -1,0 +1,146 @@
+// Page Area Style
+.page-body{
+	height: 100vh;
+    overflow: auto;
+	.page-header{
+		padding: 1rem 2rem;
+		background-color: #fafafa;
+
+		.page-title{
+			color: $blue;
+			font-size: 20px;
+			font-weight: 500;
+			margin: 0;
+		}
+
+		.user-info{
+			padding: 0 1rem;
+			.user-img{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-right: 1rem;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.user-name{
+				color: $blue;
+				margin: 0;
+			}
+		}
+	}
+
+	.result-container{
+		padding: 2rem;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 3rem 1.5rem;
+
+		// Showen tow columns
+		&.col-2{
+			grid-template-columns: auto auto;
+		}
+		.card{
+			background-color: #f9f9f9;
+			box-shadow: 2px 2px 3px 0px #0000003d;
+			padding: 1rem 1rem 0;
+			border-radius: 5px;
+			position: relative;
+			.card-title{
+				color: $blue;
+				text-transform: capitalize;
+				margin: 0 0 0.5rem;
+				font-weight: 500;
+			}
+			.card-owner{
+				// position: absolute;
+				.circle{
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					overflow: hidden;
+					color: $white;
+					background-color: $blue;
+					padding: 0.25rem;
+					font-size: 16px;
+					margin: auto;
+				}
+				.name{
+					margin: 0.2rem 0;
+					color: $blue;
+					font-size: 12px;
+					font-weight: 300;
+					text-align: center;
+				}
+			}
+			.card-footer{
+				border-top: 1px solid;
+				padding-left: 3rem;
+			}
+		}
+	}
+
+	.card-blue{
+		padding: 0.75rem 1rem 1rem;
+		border: 2px solid $blue;
+		background-color: #f4f4f4;
+		border-radius: 5px;
+
+		.company-logo{
+			margin-right: 0.5rem;
+			width: 30px;
+			height: 30px;
+			object-fit: cover;
+			border-radius: 3px;
+		}
+	}
+	// Container with Shadow and rounded corner
+	.box-container{
+		margin: 1rem;
+		padding: 1rem 1.5rem;
+		box-shadow: 0px 0px 6px 2px #0000001a;
+	    border-radius: 5px;
+	}
+
+	// Section Title
+	.sec-title{
+		color: $blue;
+		font-weight: 500;
+		font-size: 16px;
+		margin: 0 0 1rem;
+	}
+}
+
+// Filter Section Style
+.filter-sec{
+	padding: 1rem 1.5rem 0;
+	border-bottom: 1px solid $light_gray;
+
+	.btns-container{
+		width: 60%;
+	    align-items: center;
+	    flex-wrap: wrap;
+	}
+}
+
+// Status dots
+.dot {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0.25rem 1rem;
+	&.dot-green{
+		background-color: #47bd11;
+	}
+	&.dot-red{
+		background-color: #ec6b81;
+	}
+}

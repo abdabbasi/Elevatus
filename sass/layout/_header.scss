@@ -1,0 +1,77 @@
+body{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+	display: grid;
+	grid-template-columns: 250px auto;
+	transition: all 0.3s;
+	&.menu-close{
+		grid-template-columns: auto;
+	}
+
+	&.ar{
+		direction: rtl;
+
+		.main-menu .menu li.has-child > a:after{
+			right: auto;
+		    left: 2rem;
+		}
+
+		.btn-menu-close{
+			transform: rotate(180deg);
+		}
+
+		.page-body {
+			.page-header .user-info .user-img{
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+			.result-container {
+				.card{
+					.pl-3{
+						padding-left: 0;
+						padding-right: 3rem;
+					}
+					.pl-2{
+						padding-left: 0;
+						padding-right: 2rem;
+					}
+					.card-footer{
+						padding-left: 0rem;
+						padding-right: 3rem;
+					}
+				}
+			}
+		}
+		
+		.btn-blue i {
+		    padding-right: 0rem;
+		    padding-left: 1rem;
+		}
+
+		// Language Button
+		.btn-lang{
+			position: absolute;
+		    bottom: 1rem;
+		    left: auto;
+		    right: 1rem;
+		}
+
+		@media (max-width: 668px){
+			.main-menu.close {
+			    left: auto;
+			    right: 0;
+			}
+			.card-owner {
+			    position: absolute;
+			    right: auto;
+			    left: 1rem;
+			    top: 1rem;
+			}
+		}
+	}
+
+
+}

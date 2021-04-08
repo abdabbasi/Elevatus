@@ -1,0 +1,150 @@
+// Rounded Button
+.btn-transparent{
+	background-color: transparent;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 0.5rem;
+	font-size: 16px;
+	color: #8a939a;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+	width: 40px;
+	height: 40px;
+	&:hover{
+		background-color: #f5f5f5;
+	}
+}
+
+// Tabs Style
+.taps-cobtainer{
+	display: flex;
+	.tap{
+		color: #888d91;
+		padding: 1.5rem;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 400;
+		cursor: pointer;
+		transition: all 0.3s;
+		&.active , &:hover{
+			color: $blue;
+			border-bottom: 2px solid $blue;
+			font-weight: 500;
+		}
+	}
+}
+
+// Blue Button
+.btn-blue{
+	padding: 0.5rem 1rem;
+	background-color: $blue;
+	color: $white;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	cursor: pointer;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	&.rounded{
+		border-radius: 50%;
+	    padding: 0;
+	    margin: 0;
+	    width: 50px;
+	    height: 50px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    i{
+	    	padding:0;
+	    }
+	}
+	i{
+		padding-right: 1rem;
+	}
+}
+
+// Gray Button
+.btn-gray{
+	padding: 0.5rem 1rem;
+	background-color: #b7b7b7;
+	color: $white;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	cursor: pointer;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	i{
+		padding-right: 1rem;
+	}
+}
+
+// White Button
+.btn-white{
+	padding: 0.5rem 1rem;
+	background-color: $white;
+	color: #8a939a;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	cursor: pointer;
+	box-shadow: 2px 2px 3px 0px #0000003d;
+	margin: 1rem 0;
+	i{
+		padding: 0 0.5rem;
+	}
+}
+
+// Serch box style
+.search-box{
+	position: relative;
+	input{
+		background-color: #edeef0;
+		color: #899297;
+		padding: 0.5rem;
+		padding-left: 2rem;
+		border-radius: 5px;
+		outline: 0;
+		border: none;
+	}
+	&:before{
+		content: '\f002';
+	    position: absolute;
+	    height: 100%;
+	    width: 2rem;
+	    left: 0;
+	    top: 0;
+	    font-family: "Font Awesome 5 Free";
+	    font-weight: 900;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    color: #899297;
+	}
+}
+
+// Barger Menu Button
+.btn-menu{
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: 0;
+	display: none;
+	span{
+		width: 30px;
+		height: 2px;
+		display: block;
+		margin: 0.2rem 0.5rem;
+		background-color: $blue;
+	}
+}
+
+// Language Button
+.btn-lang{
+	position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
